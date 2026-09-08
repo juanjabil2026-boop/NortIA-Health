@@ -4,7 +4,7 @@ Plataforma modular de operación clínica de **NortIAcreative**, con WhatsApp co
 
 La primera entrega propuesta, **NortIA Health Concierge**, busca reducir carga administrativa, captar contactos fuera de horario y ordenar las citas. Amalia es la cliente cero prevista para validar el producto; Linda Vista representa la expansión futura hacia varias agendas y recursos.
 
-> **Estado:** documentación inicial de producto y planificación, basada en tres documentos aportados por el propietario. El repositorio no contiene todavía la implementación del sistema. Plazos, stack y presupuestos son propuestas, no resultados ni compromisos aprobados.
+> **Estado:** prototipo funcional React + TypeScript + Vite, importado desde AI Studio. Los siete módulos usan datos de demostración en `localStorage`. WhatsApp, roles y trazas son simulados; todavía no hay backend, autenticación ni base de datos compartida. Los documentos en `docs/` describen la planificación de producción.
 
 ## Problema y propuesta
 
@@ -53,11 +53,32 @@ La propuesta contempla cuatro semanas y una evaluación al día 30 mediante conv
 
 ## Cómo empezar
 
-Leer el alcance y las decisiones pendientes; confirmar reglas del consultorio, equipo y capacidad; después preparar la foundation técnica. Todavía no existen comandos de instalación, variables de entorno ni instrucciones de despliegue verificadas.
+Requiere Node.js 22.12 o posterior.
+
+```sh
+npm ci
+npm run dev
+```
+
+Verificar y compilar:
+
+```sh
+npm run lint
+npm run build
+npm run preview
+```
+
+No requiere claves de Gemini ni variables de entorno. El build genera `dist/`.
+
+- [Despliegue desde GitHub](DEPLOYMENT.md)
+- [Análisis del proyecto importado](ANALISIS.md)
+
+La fecha inicial es 2026-09-08 para mostrar los escenarios de demostración. Los cambios se guardan solo en el navegador actual. Usa exclusivamente datos ficticios.
 
 El plan operativo recomienda repositorio privado, ramas protegidas y revisión por PR. El repositorio se encontró público al documentarlo el 8 de septiembre de 2026; la visibilidad y esas protecciones requieren una decisión independiente.
 
 ## Procedencia
 
 Síntesis de la presentación ejecutiva para Amalia, el plan operativo interno y el plan de desarrollo, horas y recursos. Ver [fuentes](docs/FUENTES-Y-DECISIONES.md). Las recomendaciones de esos archivos se registran como propuestas del proyecto.
+
 

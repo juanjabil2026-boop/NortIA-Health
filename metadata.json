@@ -1,0 +1,6 @@
+{
+  "name": "NortIA Health — Plataforma de Operación Clínica",
+  "description": "Capa modular de operación clínica con atención WhatsApp asistida por IA, multiagenda con locks anti-double booking, CRM de pacientes, inventario FEFO y panel para recepción.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
